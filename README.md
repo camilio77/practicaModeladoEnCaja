@@ -1,0 +1,1 @@
+![](https://github.com/camilio77/practicaModeladoEnCaja/blob/ejercicio_3/storage/img/enunciado3.png)
