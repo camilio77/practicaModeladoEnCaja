@@ -1,55 +1,114 @@
 .container{
     height: 99%;
     width: 99%;
-    border: 1px solid black;
+    border: 1px solid rgb(56, 136, 211);
     display: flex;
     justify-content: center;
 }
 .caja1{
     flex: 1;
-    border: 1px solid black;
+    border: 1px solid rgb(84, 13, 165);
 }
 .caja2{
-    flex: 2;
-    border: 1px solid black;
+    flex: 3;
+    border: 1px solid rgb(197, 14, 14);
 }
 .subcaja1, .subcaja2{
-    border: 1px solid black;
+    border: 1px solid rgb(177, 15, 169);
     display: flex;
 }
 .subcaja2{
-    border: 1px solid black;
+    border: 1px solid rgb(9, 185, 112);
     display: flex;
 }
 .circle{
     width: 50px;
     height: 50px;
-    background: red;
+    background: rgb(149, 195, 233);
     border-radius: 50%;
+    border: 1px solid rgb(36, 41, 38);
     margin-left: 10px;
     margin-right: 20px;
 }
 .cube{
     width: 50px;
     height: 50px;
-    background: red;
+    background: rgb(149, 195, 233);
+    border: 1px solid rgb(36, 41, 38);
     margin-left: 10px;
 }
 .circle2{
     display: flex;
     width: 50px;
     height: 50px;
-    margin-left: 1027px;
-    background: red;
+    margin-left: 1170px;
+    position: relative;
+    background: rgb(149, 195, 233);
+    border: 1px solid rgb(36, 41, 38);
     border-radius: 50%;
-    justify-content: flex-end;
 }
 .subcaja4{
-    border: 1px solid black;
+    border: 1px solid rgb(177, 6, 63);
     height: 710px;
+    overflow-y: scroll;
 }
 .minicontainer{
-    border: 1px solid black;
-    width: 125px;
+    border: 1px solid rgb(78, 74, 116);
+    width: fit-content;
     box-sizing: border-box;
+}
+.barra{
+    display: flex;
+    margin-left: 20px;
+}
+.main{
+    color: blue;
+}
+.box{
+    height: 650px;
+    border: 1px solid black;
+    margin: 0 0 20px 20px;
+}
+.minibox, .minibox2, .minibox3, .minibox4{
+    border: 1px solid black;
+    width: fit-content;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 2px grey;
+}
+.porcentaje{
+    border: 1px solid black;
+    width: 250px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+}
+.barrap{
+    border: 1px solid black;
+    height: 15px;
+    width: 60%;
+    background: blueviolet;
+}
+.supbox{
+    display: flex;
+    justify-content: space-around;
+}
+.barrap2{
+    border: 1px solid black;
+    height: 15px;
+    width: 30%;
+    background: blueviolet;
+}
+.barrap3{
+    border: 1px solid black;
+    height: 15px;
+    width: 40%;
+    background: blueviolet;
+}
+.barrap4{
+    border: 1px solid black;
+    height: 15px;
+    width: 80%;
+    background: blueviolet;
 }
