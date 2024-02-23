@@ -1,4 +1,21 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    height: 100vh;
+    justify-content: center;
+}
+.foto{
+    display: flex;
+    width: 400px;
+    height: 400px;
+    margin: 1%;
+}
+img{
+    border-radius: 3%;
 }
