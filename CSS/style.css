@@ -13,7 +13,7 @@
 }
 .box{
     min-height: 480px;
-    width: 19%;
+    width: 14%;
     border-radius: 10px;
     box-shadow: 4px 4px 9px rgb(139, 139, 139);
     margin: 20px;
@@ -49,8 +49,8 @@
 p{
     display: flex;
     justify-content: center;
-    width: 260px;
-    margin-bottom: 20px;
+    width: 25vh;
+    margin-bottom: 25px;
     border-bottom: 1px solid rgb(211, 211, 211);
 }
 .button{
