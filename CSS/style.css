@@ -1,9 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
 .container{
-    height: 99%;
-    width: 99%;
+    height: 100vh;
+    width: 100%;
     border: 1px solid rgb(56, 136, 211);
     display: flex;
     justify-content: center;
+    box-sizing: border-box;
 }
 .caja1{
     flex: 1;
@@ -16,10 +26,20 @@
 .subcaja1, .subcaja2{
     border: 1px solid rgb(177, 15, 169);
     display: flex;
+    flex-wrap: wrap;
 }
 .subcaja2{
     border: 1px solid rgb(9, 185, 112);
     display: flex;
+    height: 8vh;
+    width: 100%;
+    justify-content: space-between;
+    box-sizing: border-box;
+    align-items: center;
+}
+.subcaja3{
+    height: 92%;
+    border: 1px solid aqua;
 }
 .circle{
     width: 50px;
@@ -37,25 +57,47 @@
     border: 1px solid rgb(36, 41, 38);
     margin-left: 10px;
 }
+.menucirculo{
+    position: absolute;
+    background: rgb(206, 206, 206);
+    height: 15%;
+    width: 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 5px;
+    right: 20px;
+    top: 20px;
+    opacity: 0;
+    visibility: hidden;
+}
 .circle2{
     display: flex;
     width: 50px;
     height: 50px;
-    margin-left: 1170px;
-    position: relative;
     background: rgb(149, 195, 233);
     border: 1px solid rgb(36, 41, 38);
     border-radius: 50%;
 }
+.circle2:hover{
+    .menucirculo{
+        visibility: visible;
+        opacity: 1;
+    }
+}
 .subcaja4{
     border: 1px solid rgb(177, 6, 63);
-    height: 710px;
+    height: 92vh;
     overflow-y: scroll;
+    flex-wrap: wrap;
+    overflow-x: hidden;
 }
 .minicontainer{
-    border: 1px solid rgb(78, 74, 116);
     width: fit-content;
     box-sizing: border-box;
+    flex-wrap: wrap;
 }
 .barra{
     display: flex;
@@ -65,50 +107,80 @@
     color: blue;
 }
 .box{
+    flex-wrap: wrap;
     height: 650px;
-    border: 1px solid black;
+    width: 100%;
+    background: rgb(236, 236, 236);
     margin: 0 0 20px 20px;
 }
 .minibox, .minibox2, .minibox3, .minibox4{
-    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: rgb(199, 199, 199);
     width: fit-content;
     padding: 10px;
     margin: 10px;
+    border-radius: 5px;
     box-shadow: 2px grey;
 }
 .porcentaje{
+    margin-top: 15px;
+    margin-bottom: 15px;
     border: 1px solid black;
-    width: 250px;
+    width: 30vh;
     height: 20px;
+    background: white;
     display: flex;
     align-items: center;
     padding: 2px;
+    border-radius: 5px;
 }
 .barrap{
     border: 1px solid black;
     height: 15px;
     width: 60%;
+    border-radius: 5px;
     background: blueviolet;
 }
 .supbox{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 .barrap2{
     border: 1px solid black;
     height: 15px;
     width: 30%;
+    border-radius: 5px;
     background: blueviolet;
 }
 .barrap3{
     border: 1px solid black;
     height: 15px;
     width: 40%;
+    border-radius: 5px;
     background: blueviolet;
 }
 .barrap4{
     border: 1px solid black;
     height: 15px;
     width: 80%;
+    border-radius: 5px;
     background: blueviolet;
+}
+.box2{
+    margin-left: 3vh;
+    background: rgb(199, 199, 199);
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    border-radius: 5px;
+    padding: 5px;
+    box-sizing: content-box;
+}
+.box2_box{
+    background: white;
+    width: 100%;
+    height: 40vh;
 }
